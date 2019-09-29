@@ -7,18 +7,18 @@
 
 /* fixed position navbar */
 .navigation {
-  height: 70px;
-  position: fixed;
-  width: 100%;
-  background-color: green;
+	height: 70px;
+	position: fixed;
+	width: 100%;
+	background-color: green;
 }
 
 /* video adjustment for desktop */
 #video{
-  object-fit: initial;
-  width: 70%;
-  height: 450px;
-  padding-left: 15%; 
+	object-fit: initial;
+	width: 70%;
+	height: 450px;
+	padding-left: 15%; 
 }
 
 /* Don't display logo for desktop */
@@ -32,33 +32,51 @@
 	width: 100%;
 }
 
+/* footer size and color */ 
 #lab_social_icon_footer {
-  padding: 20px 0;
-  background-color: green;
+	padding: 20px 0;
+	background-color: green;
 }
 
+/* facebook icon */
 #lab_social_icon_footer #social-fb{
-  color: blue;
-  padding-left: 20px;
+	color: blue;
+	padding-left: 20px;
 }
 
+/* Instagram icon */
 #lab_social_icon_footer #social-ig {
-  color: #d34836;
+	color: #d34836;
+}
+
+.extras_header {
+	float: right;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 3em;
+	padding-top: 5%;
+	padding-right: 17%;
+	color: green;
+}
+
+.top_left_logo_videos {
+	float: left;
+	padding-top: 4%;
+	padding-left: 5%;
 }
 
 .brand {
-  position: absolute;
-  padding-left: 10px;
-  float: left;
-  line-height: 70px;
-  text-transform: uppercase;
-  font-size: 1em;
+	position: absolute;
+	padding-left: 10px;
+	float: left;
+	line-height: 70px;
+	text-transform: uppercase;
+	font-size: 1em;
 }
 .brand a,
 .brand a:visited {
-  text-decoration: none;
+	text-decoration: none;
+	z-index: 1;
 }
-
 
 .nav-container {
 	max-width: 1000px;
@@ -67,115 +85,62 @@
 }
 
 .nav-list li a{
-color: white;	
+	color: white;	
 }
 
 nav {
 	width: 100%;
 }
-nav ul {
-	
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+nav ul {	
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 nav ul li {
-  float: left;
-  position: relative;
+	float: left;
+	position: relative;
   
 }
-nav ul li a,
-nav ul li a:visited {
-	
-  display: block;
-  padding: 0 15px;
-  line-height: 70px;
-  background-color: green;
-  text-decoration: none;
+nav ul li a, 
+nav ul li a:visited {	
+	display: block;
+	padding: 0 15px;
+	line-height: 70px;
+	background-color: green;
+	text-decoration: none;
+}
 
-}
-nav ul li a:hover,
-nav ul li a:visited:hover,
-nav ul li a.selected {
-/* put a color here when something is clicked on nav bar */
-}
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
-  padding-left: 0px;
-  content: " ▾";
+	padding-left: 0px;
+	content: " ▾";
 }
 nav ul li ul li {
-  min-width: 190px;
+	min-width: 190px;
 }
 nav ul li ul li a {
-  padding: 15px;
-  line-height: 20px;
+	padding: 15px;
+	line-height: 20px;
 }
 
 .nav-dropdown {
-  position: absolute;
-  display: none;
-  z-index: 1;
-  /*box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); */
-  box-shadow: 0 3px 12px rgba(0, 0, 255, 0.3);
+	position: absolute;
+	display: none;
+	z-index: 1;
+	box-shadow: 0 3px 12px rgba(0, 0, 255, 0.3);
 }
 
 /* Mobile navigation */
 .nav-mobile {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: green; /* this is fine */
-  height: 70px;
-  width: 70px;
-
-}
-
-@media only screen and (max-width: 798px) {
-  .nav-mobile {
-    display: block;
-  }
-
-  nav {
-    width: 100%;   
-    padding: 70px 0 0px;
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
 	background-color: green;
-	
-  }
-  nav ul {
-    display: none;
-	
-	
-  }
-  nav ul li {
-    float: none;
-	
-  }
-  nav ul li a {
-    padding: 15px;
-    line-height: 20px;
-	
-  }
-  nav ul li ul li a {
-    padding-left: 30px;
+	height: 70px;
+	width: 70px;
 
-  }
-
-  .nav-dropdown {
-    position: static;
-  }
-  .top-left-logo {
-	padding-left: 32%;
-	display: inline;
-	
-}
-}
-@media screen and (min-width: 799px) {
-  .nav-list {
-    display: block !important;
-  }
- 
 }
 
 .nav-container nav {
@@ -183,69 +148,96 @@ nav ul li ul li a {
 }
 
 #nav-toggle { 
-  position: absolute;
-  left: 18px;
-  top: 22px;
-  cursor: pointer;
-  padding: 10px 35px 16px 0px;
+	position: absolute;
+	left: 18px;
+	top: 22px;
+	cursor: pointer;
+	padding: 10px 35px 16px 0px;
 } 
 
-
-#nav-toggle span,
-#nav-toggle span:before,
+#nav-toggle span, 
+#nav-toggle span:before, 
 #nav-toggle span:after {
-  cursor: pointer;
-  border-radius: 1px;
-  height: 5px;
-  width: 35px;
-  background-color: white; /* this is the menu three lines */
-  position: absolute;
-  display: block;
-  content: "";
-  transition: all 300ms ease-in-out;
-  	
+	cursor: pointer;
+	border-radius: 1px;
+	height: 5px;
+	width: 35px;
+	background-color: white; /* this is the menu three lines */
+	position: absolute;
+	display: block;
+	content: "";
+	transition: all 300ms ease-in-out; 	
 } 
+
 #nav-toggle span:before {
-  top: -10px;
+	top: -10px;
 }
 
 #nav-toggle span:after {
-  bottom: -10px;
+	bottom: -10px;
 } 
-#nav-toggle.active span {
-  background-color: transparent;
-} 
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-  top: 0;
-}  
-#nav-toggle.active span:before {
-  transform: rotate(45deg);
+
+@media only screen and (max-width: 798px) {
+	.nav-mobile {
+		display: block;
+	}
+
+	nav {
+		width: 100%;   
+		padding: 70px 0 0px;
+		background-color: green;
+	}
+
+	nav ul {
+		display: none;
+	}
+  
+	nav ul li {
+		float: none;
+	}
+  
+	nav ul li a {
+		padding: 15px;
+		height: 20px;
+	}
+  
+	nav ul li ul li a {
+		padding-left: 30px;
+	}
+
+	.top-left-logo {
+		padding-left: 32%;
+		display: inline;
+	}
 }
-#nav-toggle.active span:after {
-  transform: rotate(-45deg);
-} 
 
 @media only screen and (max-width: 415px ) {
 
-.brand a {
-	position: fixed;
-	z-index: 1;
-	color: white;
+	.brand a {
+		position: fixed;
+		z-index: 1;
+		color: white;
+	}
+
+	#video{
+		object-fit: initial;
+		width: 90%;
+		height: 250px;
+		padding-left: 5%;
+		padding-top: 5%;
+	}
+	
+	.intro-video p {
+		padding-left: 5%;
+		padding-right: 5%;
+		font-size: 1em;
+		font-family: "Times New Roman", Times, serif;
+	}
 }
 
-#video{
-  object-fit: initial;
-  width: 90%;
-  height: 250px;
-  padding-left: 5%;
-  padding-top: 5%;
-}
-.intro-video p {
-	padding-left: 5%;
-	padding-right: 5%;
-	font-size: 1em;
-	font-family: "Times New Roman", Times, serif;
-}
-
+@media screen and (min-width: 799px) {
+	.nav-list {
+		display: block !important;
+	}
 }
 
